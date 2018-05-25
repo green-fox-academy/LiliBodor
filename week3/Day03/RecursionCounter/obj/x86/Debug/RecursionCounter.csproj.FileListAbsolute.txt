@@ -1,0 +1,6 @@
+/Users/lilibodor/Projects/RecursionCounter/RecursionCounter/obj/x86/Debug/RecursionCounter.csprojResolveAssemblyReference.cache
+/Users/lilibodor/Projects/RecursionCounter/RecursionCounter/obj/x86/Debug/RecursionCounter.csproj.CoreCompileInputs.cache
+/Users/lilibodor/Projects/RecursionCounter/RecursionCounter/bin/Debug/RecursionCounter.exe
+/Users/lilibodor/Projects/RecursionCounter/RecursionCounter/bin/Debug/RecursionCounter.pdb
+/Users/lilibodor/Projects/RecursionCounter/RecursionCounter/obj/x86/Debug/RecursionCounter.exe
+/Users/lilibodor/Projects/RecursionCounter/RecursionCounter/obj/x86/Debug/RecursionCounter.pdb
