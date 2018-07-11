@@ -1,0 +1,41 @@
+﻿@model List<BankAccount>
+@{
+    ViewData["Title"] = "Account";
+
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            padding: 15px;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Account</h2>
+
+    <table style="width:100%">
+        <tr>
+            <th>Name</th>
+            <th>Balance</th>
+            <th>AnimalType</th>
+        </tr>
+
+        @foreach (var account in Model)
+        {
+            <tr>
+                <td>@account.Name</td>
+                <td>@account.Balance</td>
+                <td>@account.AnimalType</td>
+            </tr>
+        }
+    </table>
+</body>
+</html>
