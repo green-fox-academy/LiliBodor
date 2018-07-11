@@ -12,7 +12,6 @@ namespace Bunny
             Console.WriteLine("Number of bunnies: ");
             numberOfBunnies = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("Number of ears: ");
-			//earsOfTheBunnies = Convert.ToInt32(Console.ReadLine());
 			Console.WriteLine(BunnoBunny(numberOfBunnies));
 
         }
@@ -29,3 +28,4 @@ namespace Bunny
         }
     }
 }
+
