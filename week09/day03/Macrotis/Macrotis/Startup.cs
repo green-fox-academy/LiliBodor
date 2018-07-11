@@ -2,6 +2,9 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Macrotis.Models;
+using Macrotis.Repositories;
+using Macrotis.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
@@ -22,6 +25,9 @@ namespace Macrotis
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc();
+            services.AddTransient<MacrotisOrientationExamContext>();
+            services.AddTransient<AttractionsRepository>();
+            services.AddTransient<AttractionService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

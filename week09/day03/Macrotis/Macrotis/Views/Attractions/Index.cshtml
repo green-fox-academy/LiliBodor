@@ -1,0 +1,28 @@
+﻿@model List<Attractions>
+
+<tabel  style="width:80%">
+    <tr>
+        <th>Name</th>
+        <th>City</th>
+        <th>Price</th>
+        <th>Longitude</th>
+        <th>Lattitude</th>
+        <th>Category</th>
+        <th>Duration</th>
+        <th>Recommended Age</th>
+    </tr>
+
+    @foreach (var attraction in Model)
+    {
+        <tr>
+            <td>@attraction.AttrName</td>
+            <td>@attraction.City</td>
+            <td>@attraction.Price</td>
+            <td>@attraction.Longitude</td>
+            <td>@attraction.Lattitude</td>
+            <td>@attraction.Category</td>
+            <td>@attraction.Duration</td>
+            <td>@attraction.RecommendedAge</td>
+        </tr>
+    }
+</tabel>

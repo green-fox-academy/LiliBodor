@@ -8,17 +8,22 @@ namespace Macrotis.Repositories
 {
     public class AttractionsRepository
     {
-        private object MacrotisOrientationExamContext;
+        private MacrotisOrientationExamContext macrotisOrientationExamContaxt;
 
-        public AttractionsRepository(object attractionContext)
+        public AttractionsRepository(MacrotisOrientationExamContext macrotisOrientationExamContaxt)
         {
-            this.MacrotisOrientationExamContext = attractionContext;
+            this.macrotisOrientationExamContaxt = macrotisOrientationExamContaxt;
+        }
+
+        public List<Attractions> GetAttractions()
+        {
+            return macrotisOrientationExamContaxt.Attractions.ToList();
         }
 
         public void AddAttractions(Attractions attraction)
         {
-            MacrotisOrientationExamContext.Attractions.Add(attraction);
-            MacrotisOrientationExamContext.SaveChanges();
+            macrotisOrientationExamContaxt.Attractions.Add(attraction);
+            macrotisOrientationExamContaxt.SaveChanges();
         }
     }
 }
