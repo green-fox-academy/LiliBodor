@@ -8,8 +8,9 @@ namespace Macrotis.Controllers
 {
     public class AttractionsController : Controller
     {
-        
-        public IActionResult Index()
+
+        [HttpPost("/add")]
+        public IActionResult AddAttraction(Attractions attractions)
         {
             return View();
         }
