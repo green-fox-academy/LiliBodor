@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2035
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Macrotis", "Macrotis\Macrotis.csproj", "{33569D98-6FF5-4BB5-9D41-BE8C6D2753D8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{33569D98-6FF5-4BB5-9D41-BE8C6D2753D8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{33569D98-6FF5-4BB5-9D41-BE8C6D2753D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{33569D98-6FF5-4BB5-9D41-BE8C6D2753D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{33569D98-6FF5-4BB5-9D41-BE8C6D2753D8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BCE8D35A-64BD-440E-9A29-024CC01A5EBF}
+	EndGlobalSection
+EndGlobal
