@@ -1,6 +1,7 @@
 ﻿@model List<Attractions>
 
-<tabel  style="width:80%">
+
+<table style="width:70%"; border="1">
     <tr>
         <th>Name</th>
         <th>City</th>
@@ -11,18 +12,37 @@
         <th>Duration</th>
         <th>Recommended Age</th>
     </tr>
-
-    @foreach (var attraction in Model)
+    @foreach (Attractions item in Model)
     {
-        <tr>
-            <td>@attraction.AttrName</td>
-            <td>@attraction.City</td>
-            <td>@attraction.Price</td>
-            <td>@attraction.Longitude</td>
-            <td>@attraction.Lattitude</td>
-            <td>@attraction.Category</td>
-            <td>@attraction.Duration</td>
-            <td>@attraction.RecommendedAge</td>
-        </tr>
+    <tr>
+        <td>@item.AttrName</td>
+        <td>@item.City</td>
+        <td>@item.Price</td>
+        <td>@item.Longitude</td>
+        <td>@item.Lattitude</td>
+        <td>@item.Category</td>
+        <td>@item.Duration</td>
+        <td>@item.RecommendedAge</td>
+    </tr>
     }
-</tabel>
+</table>
+<form action="/add" method="post">
+    Name:
+    <input type="text" name="attrname" required /><br>
+    City:
+    <input type="text" name="city" required /><br>
+    Price:
+    <input type="number" name="price" require /><br>
+    Longitude:
+    <input type="number" name="longitude" required /><br>
+    Latitude:
+    <input type="number" name="Lattitude" required /><br>
+    Category:
+    <input type="text" name="Category" required /><br>
+    Duration:
+    <input type="number" name="Duration" required /><br>
+    Recommended Age:
+    <input type="number" name="RecommendedAge" required /><br>
+
+    <button type="submit">Send</button>
+</form>

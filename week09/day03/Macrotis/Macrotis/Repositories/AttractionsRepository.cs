@@ -22,7 +22,13 @@ namespace Macrotis.Repositories
 
         public void AddAttractions(Attractions attraction)
         {
-            macrotisOrientationExamContaxt.Attractions.Add(attraction);
+            macrotisOrientationExamContaxt.Add(attraction);
+            macrotisOrientationExamContaxt.SaveChanges();
+        }
+
+        public void EditAttraction(Attractions attraction)
+        {
+            macrotisOrientationExamContaxt.Update(attraction);
             macrotisOrientationExamContaxt.SaveChanges();
         }
     }

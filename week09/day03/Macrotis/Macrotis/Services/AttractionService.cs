@@ -26,5 +26,10 @@ namespace Macrotis.Services
         {
             attractionsRepository.AddAttractions(attraction);
         }
+
+        public void EditAttraction(Attractions attraction)
+        {
+            attractionsRepository.EditAttraction(attraction);
+        }
     }
 }

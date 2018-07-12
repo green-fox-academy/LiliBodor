@@ -8,7 +8,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace Macrotis.Controllers
 {
-    [Route("attractions")]
+ 
     public class AttractionsController : Controller
     {
         private AttractionService attractionService;
@@ -22,6 +22,7 @@ namespace Macrotis.Controllers
         {
             return View(attractionService.GetAttractions());
         }
+
         [HttpPost("/add")]
         public IActionResult AddAttraction(Attractions attraction)
         {
@@ -29,5 +30,11 @@ namespace Macrotis.Controllers
             return RedirectToAction("Index");
         }
 
+        [HttpPost("/edit")]
+        public IActionResult EditAttraction(Attractions attraction)
+        {
+            attractionService.EditAttraction(attraction);
+            return RedirectToAction("Index");
+        }
     }
 }
