@@ -1,6 +1,6 @@
 using System;
 
-namespace Mat3x.Models
+namespace Ma3x.Models
 {
     public class ErrorViewModel
     {

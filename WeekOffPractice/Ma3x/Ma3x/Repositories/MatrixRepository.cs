@@ -1,10 +1,10 @@
-﻿using Mat3x.Models;
+﻿using Ma3x.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace Mat3x.Repository
+namespace Ma3x.Repositories
 {
     public class MatrixRepository
     {

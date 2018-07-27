@@ -2,25 +2,24 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using Mat3x.Models;
-using Mat3x.Service;
+using Ma3x.Services;
 using Microsoft.AspNetCore.Mvc;
 
-namespace Mat3x.Controllers
+namespace Ma3x.Controllers
 {
     public class MatrixController : Controller
     {
+        private MatrixService matrixService { get; set; }
+
         public MatrixController(MatrixService matrixService)
         {
             this.matrixService = matrixService;
         }
 
-        private MatrixService matrixService { get; set; }
-
         [HttpGet("/")]
         public IActionResult Index(string message)
         {
-            return View( (object)message );
+            return View((object)message);
         }
 
         [HttpPost("/matrix")]

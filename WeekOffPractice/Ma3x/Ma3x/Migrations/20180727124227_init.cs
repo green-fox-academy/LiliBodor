@@ -2,9 +2,9 @@
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
 
-namespace Mat3x.Migrations
+namespace Ma3x.Migrations
 {
-    public partial class inital : Migration
+    public partial class init : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -14,7 +14,7 @@ namespace Mat3x.Migrations
                 {
                     Id = table.Column<int>(nullable: false)
                         .Annotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn),
-                    MatrixNumbers = table.Column<int>(nullable: false),
+                    MatrixNumbers = table.Column<string>(nullable: true),
                     CurrentDateTime = table.Column<DateTime>(nullable: false)
                 },
                 constraints: table =>

@@ -4,9 +4,9 @@ using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-using Mat3x.Models;
+using Ma3x.Models;
 
-namespace Mat3x.Controllers
+namespace Ma3x.Controllers
 {
     public class HomeController : Controller
     {

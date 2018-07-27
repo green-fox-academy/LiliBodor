@@ -2,16 +2,16 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using Mat3x.Models;
-using Mat3x.Repository;
-using Mat3x.Service;
+using Ma3x.Models;
+using Ma3x.Repositories;
+using Ma3x.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace Mat3x
+namespace Ma3x
 {
     public class Startup
     {
@@ -25,7 +25,7 @@ namespace Mat3x
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            string connection = @"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=madma3x;";
+            string connection = @"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=ma3x";
             services.AddMvc();
             services.AddDbContext<MatrixDbContext>(option => option.UseSqlServer(connection));
             services.AddTransient<MatrixDbContext>();

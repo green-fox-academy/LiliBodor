@@ -1,11 +1,11 @@
-﻿using Mat3x.Models;
-using Mat3x.Repository;
+﻿using Ma3x.Models;
+using Ma3x.Repositories;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace Mat3x.Service
+namespace Ma3x.Services
 {
     public class MatrixService
     {
@@ -70,7 +70,7 @@ namespace Mat3x.Service
                             return false;
                         }
                     }
-                return true;
+                    return true;
                 }
             }
             return false;
@@ -80,15 +80,15 @@ namespace Mat3x.Service
         {
             List<List<string>> goodMatrices = GetTheMatrixNumbers(inputMatrix);
             if (!IsIncreasing(goodMatrices))
-            {   
+            {
                 return "This matrix is not increasing! Please try again!";
             }
             else if (!IsSquare(goodMatrices) && !IsIncreasing(goodMatrices))
             {
                 return "This matrix is not square and also not increasing! Please try again!";
             }
-            matrixRepository.AddNewMatrix(new Matrix(){ MatrixNumbers = inputMatrix, CurrentDateTime = DateTime.Now });
-            return "The matrix is increasing!"; 
+            matrixRepository.AddNewMatrix(new Matrix() { MatrixNumbers = inputMatrix, CurrentDateTime = DateTime.Now });
+            return "The matrix is increasing!";
         }
     }
 }
